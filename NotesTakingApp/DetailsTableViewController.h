@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailsTableViewController.h
 //  NotesTakingApp
 //
 //  Created by Kemuel Clyde Belderol on 22/03/2017.
@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AudioToolbox/AudioToolbox.h>
+
+@class Note;
+@interface DetailsTableViewController : UIViewController
 
 
-@interface ViewController : UIViewController 
+@property (strong, nonatomic)Note *note;
 
 
 @end
-

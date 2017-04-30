@@ -13,6 +13,9 @@
 		52F3BEC51E82CE330042FCE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F3BEC31E82CE330042FCE2 /* Main.storyboard */; };
 		52F3BEC71E82CE330042FCE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F3BEC61E82CE330042FCE2 /* Assets.xcassets */; };
 		52F3BECA1E82CE330042FCE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F3BEC81E82CE330042FCE2 /* LaunchScreen.storyboard */; };
+		52F3BED31E82CF6A0042FCE2 /* DetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F3BED21E82CF6A0042FCE2 /* DetailsTableViewController.m */; };
+		52F3BED61E82CF9F0042FCE2 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F3BED51E82CF9F0042FCE2 /* Note.m */; };
+		52F3BEFF1E837C570042FCE2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3BEFE1E837C570042FCE2 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		52F3BEC61E82CE330042FCE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52F3BEC91E82CE330042FCE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F3BECB1E82CE330042FCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F3BED11E82CF6A0042FCE2 /* DetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsTableViewController.h; sourceTree = "<group>"; };
+		52F3BED21E82CF6A0042FCE2 /* DetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsTableViewController.m; sourceTree = "<group>"; };
+		52F3BED41E82CF9F0042FCE2 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		52F3BED51E82CF9F0042FCE2 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		52F3BEFE1E837C570042FCE2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F3BEFF1E837C570042FCE2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			children = (
 				52F3BEB91E82CE330042FCE2 /* NotesTakingApp */,
 				52F3BEB81E82CE330042FCE2 /* Products */,
+				52F3BEFD1E837C560042FCE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +73,10 @@
 				52F3BEC01E82CE330042FCE2 /* ViewController.h */,
 				52F3BEC11E82CE330042FCE2 /* ViewController.m */,
 				52F3BEC31E82CE330042FCE2 /* Main.storyboard */,
+				52F3BED41E82CF9F0042FCE2 /* Note.h */,
+				52F3BED51E82CF9F0042FCE2 /* Note.m */,
+				52F3BED11E82CF6A0042FCE2 /* DetailsTableViewController.h */,
+				52F3BED21E82CF6A0042FCE2 /* DetailsTableViewController.m */,
 				52F3BEC61E82CE330042FCE2 /* Assets.xcassets */,
 				52F3BEC81E82CE330042FCE2 /* LaunchScreen.storyboard */,
 				52F3BECB1E82CE330042FCE2 /* Info.plist */,
@@ -77,6 +91,14 @@
 				52F3BEBB1E82CE330042FCE2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52F3BEFD1E837C560042FCE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F3BEFE1E837C570042FCE2 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F3BED61E82CF9F0042FCE2 /* Note.m in Sources */,
+				52F3BED31E82CF6A0042FCE2 /* DetailsTableViewController.m in Sources */,
 				52F3BEC21E82CE330042FCE2 /* ViewController.m in Sources */,
 				52F3BEBF1E82CE330042FCE2 /* AppDelegate.m in Sources */,
 				52F3BEBC1E82CE330042FCE2 /* main.m in Sources */,
@@ -309,6 +333,7 @@
 				52F3BED01E82CE330042FCE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
